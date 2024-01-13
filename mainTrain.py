@@ -11,9 +11,9 @@ from keras.layers import Conv2D,MaxPool2D
 from keras.layers import Activation,Dropout,Flatten,Dense
 from keras.utils import to_categorical # for categorical_cross entropy
 
-image_directory='Datasets/'
+image_directory='BrainTumor/Datasets/'
 
-no_tumor_iamges=os.listdir(image_directory+ 'no/')
+no_tumor_iamges=os.listdir(image_directory+ 'no')
 yes_tumor_images=os.listdir(image_directory +'yes/')
 dataset=[]
 label=[]
